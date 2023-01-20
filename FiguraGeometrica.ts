@@ -21,9 +21,7 @@ abstract class Figura implements FiguraGeometricas {
 }
 
 class Circulo extends Figura {
-
     private radio: number;
-
     constructor(nombre: string, radio: number) {
         super(nombre);
         this.radio = radio;
@@ -36,7 +34,6 @@ class Circulo extends Figura {
     calcularPerimetro(): void {
         let perimetro: number;
         perimetro= 2 * Math.PI * this.radio
-
     }
 
 }
